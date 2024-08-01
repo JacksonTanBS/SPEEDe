@@ -13,7 +13,7 @@ from glob import glob
 sensor = sys.argv[1]
 
 modelName = f'SPEEDe.GPROF-{sensor}.v1.0.0'
-modelpath = '/gpm3/btan1/IMERG_ML/SPEEDe/GPROF/'
+modelpath = './saved_model/'
 os.makedirs(modelpath, exist_ok = True)
 
 # Define the model settings.
@@ -27,9 +27,6 @@ es_patience = 5     # patience in early stopping
 es_delta = 0.00005  # min_delta in early stopping
 
 # Define the grid settings and training year.
-
-# JT: ntrack and nswath should be divisible by 10 due to model architecture,
-# not sure what happens if it is not (model can run, but...???)
 
 if   sensor == 'AMSRE':
     ntrack, nswath = 3950, 390    # 3956, 392
@@ -61,9 +58,9 @@ elif sensor == 'AMSR2':
 else:
     sys.exit(f'Error: grid setting for {sensor} unspecified.')
 
-# Get the filenames for training/validation using the list of known good dates.
+# Get the filenames for training.
 
-inpath = '/gpm3/btan1/data_repository/GPROF/V07A/2A-CLIM/'
+inpath = '/path/to/GPROF/files/'
 
 files = []
 for month in range(1, 13):

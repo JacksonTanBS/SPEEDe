@@ -31,9 +31,9 @@ fv = -9999.9
 
 # Set up the directories.
 
-mappath = '/gpm3/btan1/plots/bkgnd_maps/'
-modelpath = '/gpm3/btan1/IMERG_ML/SPEEDe/GPROF/'
-outpath = f'/gpm3/btan1/IMERG_ML/SPEEDe/GPROF/{modelName}/'
+mappath = '../bkgnd_maps/'
+modelpath = './saved_model/'
+outpath = './'
 
 os.makedirs(outpath, exist_ok = True)
 
