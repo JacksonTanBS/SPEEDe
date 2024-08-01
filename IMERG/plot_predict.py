@@ -26,15 +26,15 @@ ver = 'V07A'
 var = 'precipitation'
 dpi = 100    # 100 = 1152x648, 166.667 = 1920x1080, 333.334 = 3840x2160
 useHighResMap = True    # use high res. background map
-useStaticMap = False    # use fixed background map as opposed to monthly map
+useStaticMap = True    # use fixed background map as opposed to monthly map
 
 plt.rcParams['font.sans-serif'] = ['Helvetica', 'TeX Gyre Heros', 'DejaVu Sans']
 
 # Set up the directories.
 
-mappath = '/gpm3/btan1/plots/bkgnd_maps/'
-modelpath = '/gpm3/btan1/IMERG_ML/AnDe/IMERG/'
-outpath = f'/gpm3/btan1/IMERG_ML/AnDe/IMERG/{modelName}/'
+mappath = '../bkgnd_maps/'
+modelpath = './saved_model/'
+outpath = './'
 
 os.makedirs(outpath, exist_ok = True)
 

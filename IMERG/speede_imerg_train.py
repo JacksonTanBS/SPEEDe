@@ -11,7 +11,7 @@ from imerg_input_generator import imerg_input_generator
 
 modelName = 'SPEEDe.IMERG.v1.0.2'
 
-modelpath = '/gpm3/btan1/IMERG_ML/SPEEDe/IMERG/'
+modelpath = './saved_model/'
 os.makedirs(modelpath, exist_ok = True)
 
 # Define the model settings.
@@ -38,7 +38,7 @@ fv = -9999.9
 
 files = []
 
-with open('/gpm3/btan1/IMERG_ML/SPEEDe/IMERG/fields.good.231013.txt', 'r') as f:
+with open('./saved_model/fields.good.231013.txt', 'r') as f:
     for orbit in f.readlines():
 
         year, month, day, hhr = [int(ii) for ii in orbit.split()]
@@ -47,7 +47,7 @@ with open('/gpm3/btan1/IMERG_ML/SPEEDe/IMERG/fields.good.231013.txt', 'r') as f:
         t1 = (t + timedelta(seconds = 1799)).strftime('%H%M%S')
         t2 = int((t - datetime(year, month, day)).total_seconds() / 60)
 
-        files.append(f'/gpm3/data/IMERG/Final/HHR/V07A/' 
+        files.append(f'/path/to/IMERG/files/' 
                      f'{year}/{month:02d}/{day:02d}/' 
                      f'3B-HHR.MS.MRG.3IMERG.{year}{month:02d}'
                      f'{day:02d}-S{t0}-E{t1}.{t2:04d}.V07A.HDF5')
