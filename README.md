@@ -26,4 +26,12 @@ Example of bad data in a GPROF orbit.
 
 # References
 
-To be completed
+Huffman, G. J., and Coauthors, 2020: Integrated Multi-satellite Retrievals for the Global Precipitation Measurement (GPM) Mission (IMERG). Satellite Precipitation Measurement, V. Levizzani, C. Kidd, D.B. Kirschbaum, C.D. Kummerow, K. Nakamura, and F.J. Turk, Eds., Vol. 67 of Advances in Global Change Research, Springer International Publishing, 343–353, http://doi.org/10.1007/978-3-030-24568-9_19.
+
+Huffman, G. J., and Coauthors, 2023: Algorithm Theoretical Basis Document (ATBD). NASA Global Precipitation Measurement (GPM) Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 07. NASA, https://gpm.nasa.gov/resources/documents/imerg-v07-atbd.
+
+Huffman, G. J., E. F. Stocker, D. T. Bolvin, E. J. Nelkin, and J. Tan, 2023: GPM IMERG Final Precipitation L3 Half Hourly 0.1 degree x 0.1 degree V07. https://doi.org/10.5067/GPM/IMERG/3B-HH/07.
+
+Kummerow, C. D., D. L. Randel, M. Kulie, N.-Y. Wang, R. Ferraro, S. Joseph Munchak, and V. Petkovic, 2015: The Evolution of the Goddard Profiling Algorithm to a Fully Parametric Scheme. J. Atmos. Ocean. Tech., 32, 2265–2280, https://doi.org/10.1175/JTECH-D-15-0039.1.
+
+Tan, J., G. J. Huffman, Y. Song, 2024: Automated Quality Control Scheme for GPM Satellite Precipitation Products. Geophys. Res. Lett., accepted for publication.
