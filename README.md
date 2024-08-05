@@ -1,3 +1,5 @@
+This repository contains the codes for the SPEEDe software and the analysis/plotting routines for the figures in 10.1029/2024GL108963.
+
 # SPEEDe
 
 ## Introduction
@@ -22,7 +24,7 @@ Example of the SPEEDe output corresponding to the bad IMERG data.
 Example of bad data in a GPROF orbit.
 
 ![Example of the SPEEDe output corresponding to the bad GPROF data](./examples/fig.F16case.SPEEDe-GPROF.png)
-[Example of the SPEEDe output corresponding to the bad GPROF data.
+Example of the SPEEDe output corresponding to the bad GPROF data.
 
 # References
 
